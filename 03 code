@@ -1,0 +1,87 @@
+import java.util.*;
+
+class Customer {
+    private String id;
+    private String name;
+}
+
+class SoftwareSystem {
+    private String systemNode;
+}
+
+// --- Main Application Logic ---
+public class TidoApp {
+    
+    // DVD Management
+    public void searchDVDs(String query, String type) {
+        // Includes: searchByTitle, searchByCategory, searchByPrice
+    }
+
+    public void viewDVDDetail(String dvdId) {
+        // Extend: playDVDDemo()
+    }
+
+    public void playDVDDemo() { }
+
+    // Cart System
+    public void addToCart(String dvdId) { }
+
+    public void viewCart() {
+        // Extends: removeDVD, updateQuantity, filterDVDs, sortDVDs
+    }
+
+    public void removeDVD(String dvdId) { }
+
+    public void updateQuantity(String dvdId, int qty) { }
+
+    public void filterDVDs(String criteria) {
+        // Subtypes: byTitle, byID
+    }
+
+    public void sortDVDs(String criteria) {
+        // Subtypes: sortByTitle, sortByCost
+    }
+
+    // Order System
+    public void placeOrder() {
+        // Includes: enterDeliveryInfo, pay
+        enterDeliveryInfo();
+        pay();
+    }
+
+    private void enterDeliveryInfo() { }
+
+    private void pay() { }
+
+    // Admin & System Operations
+    public void login() { }
+
+    public void logout() { }
+
+    public void addNewDVD() { }
+
+    public void deleteDVD(String dvdId) { }
+
+    public void viewOrder() {
+        // Extends: approveOrder, rejectOrder
+    }
+
+    public void approveOrder() { }
+
+    public void rejectOrder() { }
+
+    public void sendEmail() { }
+
+    public void displayInvoice() {
+        // Includes: calculateFee
+        calculateFee();
+    }
+
+    private double calculateFee() {
+        return 0.0;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Tido System Initialized");
+    }
+}
